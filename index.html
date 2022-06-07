@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Timer</title>
+</head>
+<body>
+    <header>
+        <h1 class="ir">weniv logo</h1>
+    </header>
+    <article>
+        <h2>TIMER</h2>
+        <div class="timeContainer">
+            <div class="timeBox">
+                <span>HRS</span>
+                <input id="hrs" class="time" type="number" min="0" max="99">
+            </div>
+            <div class="timeBox">
+                <span>MIN</span>
+                <input id="min" class="time" type="number" min="0" max="59">
+            </div>
+            <div class="timeBox">
+                <span>SEC</span>
+                <input id="sec" class="time" type="number" min="0" max="59">
+            </div>
+        </div>
+        <div>
+            <button id="startButton" disabled>
+                <img src="./img/start-default.png" alt="">
+            </button>
+            <button id="pauseButton" class="hide">
+                <img src="./img/pause.png" alt="">
+            </button>
+            <button id="resetButton" disabled>
+                <img src="./img/reset-default.png" alt="">
+            </button>
+        </div>
+    </article>
+    <script src="./index.js"></script>
+</body>
+</html>
