@@ -14,27 +14,52 @@ button, button:hover, button:focus, button:active{
     cursor: pointer;
 }
 
+input{
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+input::-webkit-inner-spin-button {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+}
+
 /* reset */
 
-body { 
+body {
     font-family: Pretendard, -apple-system, BlinkMacSystemFont, system-ui, Roboto, 'Helvetica Neue', 'Segoe UI', 'Apple SD Gothic Neo', 'Noto Sans KR', 'Malgun Gothic', sans-serif;
     background: radial-gradient(96.74% 276.79% at 3.59% 5.28%, #F0F4FF 0%, #A5B6EE 100%);
-    padding: 180px 440px;
     color: white;
     text-align: center;
+    padding: 72px 0;
 }
 
 .ir{
-    color:transparent;
+    color: transparent;
     background-image: url(./img/weniv-logo.svg);
     background-position: center;
     background-repeat: no-repeat;
 }
 
 article{
+    box-sizing: border-box;
+    width: 400px;
+    height: 360px;
+    margin: 60px auto;
     background: linear-gradient(144.07deg, #5572BB 2.13%, #374B7C 102.97%);
     box-shadow: 20px 20px 60px 10px rgba(55, 75, 124, 0.4);
     border-radius: 16px;
+    padding: 48px 58px;
+}
+
+h2{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 29px;
+    margin: 0 auto;
 }
 
 #startButton:disabled, #resetButton:disabled{
@@ -48,10 +73,11 @@ article{
 .timeContainer{
     display: flex;
     justify-content: space-around;
+    margin: 40px auto;
+    color: #A5B6EE;
 }
 
 .timeBox{
-    background-image: url(./img/Rectangle\ 1.png);
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
@@ -59,8 +85,25 @@ article{
 }
 
 .time{
+    box-sizing: border-box;
+    width: 80px;
+    height: 80px;
+    background-image: url(./img/Rectangle\ 1.png);
     border: 0;
+    padding: 16px 14px;
     background-color: inherit;
     color: white;
     text-align: center;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 48px;
+}
+
+footer{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    color: #8596BF;
 }
